@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Un sitio web de recetas de cocina.">
     <meta name="keywords" content="recetas, cocina, comida, saludable">
+    <meta name="author" content="Diego Zuccolilli">
+    <link rel="stylesheet" href="/CSS/index.css">
     <title>Mi libro de Recetas</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Mi libro de Recetas</h1>
-   <nav>
-    <img src="/imagenes/mi-gran-libro-de-recetas.jpg" alt="imagen de un libro de recetas, logo" width="100" height="100">
+   <nav class="nav">
+    <img id="logo" src="/imagenes/mi-gran-libro-de-recetas.jpg" alt="imagen de un libro de recetas, logo" width="100" height="100">
     <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="indice.html">Indice</a></li>
         <li><a href="#">Secciones</a>
             <ul>
-                <li><a href="pizzas.html">Pizzas</a></li>
+                <li><a href="#pizzas">Pizzas</a></li>
                 <li><a href="carnes.html">Carnes</a></li>
                 <li><a href="postres.html">Postres</a></li>
             </ul>
@@ -30,13 +32,19 @@
 </nav>
     </header>
     <main>
-        <section>
+        <section class="sec_bienvenida">
+            <div class="carousel">
+                <img class="imagen_pizza1" src="/imagenes/foto pizza.png" alt="Imagen 1">
+                <img class="imagen_pizza2" src="/imagenes/foto pizza 2.png" alt="Imagen 2">
+                <img class="imagen_pizza1" src="/imagenes/foto pizza.png" alt="Imagen 1">
+                <img class="imagen_pizza2" src="/imagenes/foto pizza 2.png" alt="Imagen 2">
+            </div>
             <h2>Bienvenido a mi libro de recetas</h2>
             <p>Este es un documento que recopila varias recetas personales
                 con el fin de compartirlas con amigos y familiares.</p>
             </p>
             <p>A traves de las siguientes recetas quiero transmitir la pasion que siento por la cocina<br>
-            y cuantas satifacciones me genera, ya se cocinar para amigos o para un evento</p>
+            y cuantas satifacciones me genera, ya sea, cocinar para amigos o para un evento</p>
             <p>Espero que disfruten de estas recetas tanto como yo disfruto cocinando.</p>
             <p>Si tienes alguna duda o sugerencia, no dudes en contactarme.</p>
             <p>¡Buen provecho!</p>
@@ -46,7 +54,7 @@
         <section>
             <h2>Indice de recetas</h2>
             <dl>
-                <dt><a href=""><em>Pizza con 70 % de hidratacion</em></a></dt>
+                <dt><a href="#recetaPizza"><em>Pizza con 70 % de hidratacion</em></a></dt>
                 <dd>Una deliciosa receta, sencilla y practica para compartir e incluso para vender .</dd>
                 <dt><a href=""><em>Bondiola a la cerveza con papas al horno</em></a></dt>
                 <dd>Sin duda una receta que destaca por su sencillez<br>
@@ -57,8 +65,9 @@
 
         </section>
 <hr>
-<section>
-            <h3>Pizza al 70%</h3>
+<section id="pizzas">
+    <h1>Pizzas</h1>
+            <h3 id="recetaPizza">Pizza al 70%</h3>
             <p>Esta receta es ideal para una cena rápida y deliciosa.</p>
             <p>La masa es muy fácil de hacer y puedes agregar tus ingredientes favoritos.</p>
             <table>
@@ -119,6 +128,9 @@
     <footer>
         <p>&copy; 2025 Mi Sitio Web</p>
     </footer>
+
+   <script src="app.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav {
+    background-color: #707070;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sec_bienvenida {
+    position: relative;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.856);
+    text-shadow: #000000 0px 0px 5px;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: slide 60s linear infinite;
+    z-index: -1;
+}
+
+.carousel img {
+    width: 50%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid rgba(207, 201, 201, 0.671);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2px 0;
+    transition: transform 0.5s ease;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
