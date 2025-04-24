@@ -7,66 +7,78 @@
     <meta name="description" content="Un sitio web de recetas de cocina.">
     <meta name="keywords" content="recetas, cocina, comida, saludable">
     <meta name="author" content="Diego Zuccolilli">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/CSS/index.css">
     <title>Mi libro de Recetas</title>
 </head>
 
 <body>
     <header class="header">
-        <h1>Mi libro de Recetas</h1>
-   <nav class="nav">
-    <img id="logo" src="/imagenes/mi-gran-libro-de-recetas.jpg" alt="imagen de un libro de recetas, logo" width="100" height="100">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="indice.html">Indice</a></li>
-        <li><a href="#">Secciones</a>
-            <ul>
-                <li><a href="#pizzas">Pizzas</a></li>
-                <li><a href="carnes.html">Carnes</a></li>
-                <li><a href="postres.html">Postres</a></li>
+
+        <div class="buscador">
+            <input type="text" placeholder="Buscar recetas...">
+            <button type="submit">Buscar</button>
+        </div>
+        <nav class="nav">
+            <h1>Mi libro de Recetas</h1>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="indice.html">Indice</a></li>
+                <li><a href="#">Secciones</a>
+                    <ul class="submenu">
+                        <li><a href="#pizzas">Pizzas</a></li>
+                        <li><a href="carnes.html">Carnes</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
             </ul>
-        </li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="sobre-mi.html">Sobre mí</a></li>
-    </ul>
-</nav>
+        </nav>
     </header>
     <main>
         <section class="sec_bienvenida">
-            <div class="carousel">
-                <img class="imagen_pizza1" src="/imagenes/foto pizza.png" alt="Imagen 1">
-                <img class="imagen_pizza2" src="/imagenes/foto pizza 2.png" alt="Imagen 2">
-                <img class="imagen_pizza1" src="/imagenes/foto pizza.png" alt="Imagen 1">
-                <img class="imagen_pizza2" src="/imagenes/foto pizza 2.png" alt="Imagen 2">
-            </div>
-            <h2>Bienvenido a mi libro de recetas</h2>
-            <p>Este es un documento que recopila varias recetas personales
-                con el fin de compartirlas con amigos y familiares.</p>
-            </p>
-            <p>A traves de las siguientes recetas quiero transmitir la pasion que siento por la cocina<br>
-            y cuantas satifacciones me genera, ya sea, cocinar para amigos o para un evento</p>
-            <p>Espero que disfruten de estas recetas tanto como yo disfruto cocinando.</p>
-            <p>Si tienes alguna duda o sugerencia, no dudes en contactarme.</p>
-            <p>¡Buen provecho!</p>
-            <p>Recuerda que la cocina es un arte y cada receta es una obra maestra.</p>
-            <p>¡Anímate a experimentar y crear tus propias recetas!</p>
+            <article class="texto-bienvenida parkinsans">
+                <h2>Bienvenido a mi libro de recetas</h2>
+                <p>Este es un documento que recopila varias recetas personales
+                    con el fin de compartirlas con amigos y familiares.</p>
+                </p>
+                <p>A traves de las siguientes recetas quiero transmitir la pasion que siento por la cocina<br>
+                    y cuantas satifacciones me genera, ya sea, cocinar para amigos o para un evento</p>
+                <p>Espero que disfruten de estas recetas tanto como yo disfruto cocinando.</p>
+                <p>Si tienes alguna duda o sugerencia, no dudes en contactarme.</p>
+                <p>¡Buen provecho!</p>
+                <p>Recuerda que la cocina es un arte y cada receta es una obra maestra.</p>
+                <p>¡Anímate a experimentar y crear tus propias recetas!</p>
+            </article>
         </section>
-        <section>
+        <section class="sec_indice">
             <h2>Indice de recetas</h2>
-            <dl>
-                <dt><a href="#recetaPizza"><em>Pizza con 70 % de hidratacion</em></a></dt>
-                <dd>Una deliciosa receta, sencilla y practica para compartir e incluso para vender .</dd>
-                <dt><a href=""><em>Bondiola a la cerveza con papas al horno</em></a></dt>
-                <dd>Sin duda una receta que destaca por su sencillez<br>
-                    y a su vez tiene la versatilidad para sorprender a cualquiera</dd>
-                <dt><a href=""><em>Tarta de coco</em></a></dt>
-                <dd>Un postre delicioso, que combina la alta cocina con lo mas clasico</dd>
-            </dl>
+            <ul class="indice">
+                <li><a href="#recetaPizza">Pizzas</a>
+                    <p>Deliciosas recetas de diferentes clases de pizzas,
+                        con la cual podras sorprender a tus amigos y familiares</p>
+                </li>
+                <li><a href="#recetaBondiola">Carnes</a>
+                    <p>Algunas de mis recetas con carnes que he recopilado a lo largo de los años,
+                        que son fáciles de preparar y perfectas para cualquier ocasión
+                    </p>
+                </li>
+                <li><a href="#recetaTarta">Postres</a>
+                    <p>Postres deliciosos para agasajar tus seres queridos
+                        o simplemente para disfrutar en una tarde de verano</p>
+                </li>
+
+            </ul>
 
         </section>
-<hr>
-<section id="pizzas">
-    <h1>Pizzas</h1>
+        <hr>
+        <section id="pizzas">
+            <h1>Pizzas</h1>
             <h3 id="recetaPizza">Pizza al 70%</h3>
             <p>Esta receta es ideal para una cena rápida y deliciosa.</p>
             <p>La masa es muy fácil de hacer y puedes agregar tus ingredientes favoritos.</p>
@@ -112,15 +124,17 @@
             <h3>Instrucciones</h3>
             <ol>
                 <li>Como primer paso colocamos en un recipiente la harina junto con la sal y mezclamos</li>
-                <li>Luego en un recipiente aparte colocamos la levadura con un poco de agua tibia y la disolvemos bien</li>
+                <li>Luego en un recipiente aparte colocamos la levadura con un poco de agua tibia y la disolvemos bien
+                </li>
                 <li>A continuacion completamos el resto de agua</li>
-                <li>Incorporamos el agua a la harina y empezamos a mezclar hasta conseguir una consistencia algo homogenea</li>
+                <li>Incorporamos el agua a la harina y empezamos a mezclar hasta conseguir una consistencia algo
+                    homogenea</li>
                 <li>Incorporamos el aceite y comenzamos con el proceso de amasado</li>
                 <li>Una vez lista la masa, la llevamos a la mesada, le hacemos unos pliegues<br>
-                y dejamos reposar por 15 minutos, tapando la masa para que  no se seque</li>
+                    y dejamos reposar por 15 minutos, tapando la masa para que no se seque</li>
                 <li>Ya pasado este tiempo, procedemos a cortar la masa en bollos de 410, 420 gramos.</li>
-                <li>A cada trozo le damos forma de bollo, y dejamos reposar alrededor de 30 a 40 minutos, <br> 
-                para lograr un buen levado de la masa</li>
+                <li>A cada trozo le damos forma de bollo, y dejamos reposar alrededor de 30 a 40 minutos, <br>
+                    para lograr un buen levado de la masa</li>
 
             </ol>
         </section>
@@ -129,7 +143,7 @@
         <p>&copy; 2025 Mi Sitio Web</p>
     </footer>
 
-   <script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
