@@ -112,19 +112,41 @@ h1 {
 
 .sec_bienvenida {
     position: relative;
-    /* Asegura que el pseudo-elemento se posicione relativo a este contenedor */
-    text-align: center;
     color: rgba(236, 236, 236, 0.856);
-    text-shadow: #424242 0px 0px 5px;
-    font-weight: bolder;
+    text-shadow: #686868 0px 0px 5px;
     overflow: hidden;
-    /* Oculta cualquier contenido que se desborde */
-    font-family: roboto, sans-serif;
     box-sizing: border-box;
 
 }
 
-.texto_bienvenida {}
+.sec_bienvenida h2 {
+    color: #d8d8d8;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 2.5em;
+    text-shadow: #686868 0px 0px 5px;
+}
+
+#parrafo-bienvenida {
+    color: #d8d8d8;
+    position: relative;
+    font-family: "Parkinsans", sans-serif;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.sec_indice h2 {
+    color: #696969;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 2rem;
+    text-shadow: #686868 0px 0px 3px;
+}
 
 .indice {
     display: grid;
@@ -136,33 +158,50 @@ h1 {
     padding: 20px;
     background-color: #f0f0f0;
     list-style: none;
+    position: relative;
 
 }
 
 .indice li {
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #c0bdbdad;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
     cursor: pointer;
     text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #f51212;
-    text-decoration: none;
 
 }
 
 .indice li:hover {
-    transform: scale(1.5);
-    background-color: #e0e0e0;
-    transition: 1s;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .indice li a {
     text-decoration: none;
-    color: #863030;
+    color: #000000;
     font-weight: bold;
-    font-family: roboto, sans-serif;
+    font-size: 1.2em;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.indice li p {
+    font-size: 0.8em;
+    color: #000000;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+}
+
+#foto-pizza-indice {
+    width: 100%;
+    position: relative;
+    background-image: url('/imagenes/foto\ pizza.png');
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: #424242 3px 2px 2px;
+    border-radius: 5px;
 }
