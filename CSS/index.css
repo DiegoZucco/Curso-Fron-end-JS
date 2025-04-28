@@ -61,23 +61,34 @@ h1 {
 
 
 .menu li {
-
     position: relative;
     padding: 10px 20px;
     color: #000000;
-    text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.menu li:hover {
+    background-color: #bbb8b888;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Parkinsans", sans-serif;
+}
 .submenu {
     display: none;
     position: absolute;
-    background-color: #f9f9f986;
+    background-color: #ffffffad;
     padding: 5px;
     list-style: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para el submenu */
+    border-radius: 5px;
     z-index: 1000;
 }
 
@@ -124,8 +135,7 @@ h1 {
     font-family: "Parkinsans", sans-serif;
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
-    font-size: 2.5em;
+    padding: 10px 0;
     text-shadow: #686868 0px 0px 5px;
 }
 
@@ -135,7 +145,7 @@ h1 {
     font-family: "Parkinsans", sans-serif;
     width: 60%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0.6rem auto;
 
 }
 .sec_indice h2 {
@@ -155,7 +165,7 @@ h1 {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: #f0f0f0;
     list-style: none;
     position: relative;
@@ -163,12 +173,12 @@ h1 {
 }
 
 .indice li {
-    padding: 10px;
-    background-color: #c0bdbdad;
+    padding: 5px;
+    background-color: #6b6b6bad;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    transition: transform 0.5s ease-in-out;
     cursor: pointer;
     text-align: center;
 
@@ -176,7 +186,6 @@ h1 {
 
 .indice li:hover {
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .indice li a {
@@ -194,14 +203,15 @@ h1 {
     text-align: center;
 }
 
-#foto-pizza-indice {
+#foto-pizza-indice, #foto-carne-indice, #foto-postre-indice {
+    margin-top: 0.8rem;
     width: 100%;
+    height: 60%;
     position: relative;
-    background-image: url('/imagenes/foto\ pizza.png');
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
-    box-shadow: #424242 3px 2px 2px;
     border-radius: 5px;
+   filter: drop-shadow(0 0 10px #000000);
+   
 }
+
+ 
