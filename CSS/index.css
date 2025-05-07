@@ -18,15 +18,44 @@ header {
 }
 
 .buscador {
-    background-color: aquamarine;
-    text-align: right;
+    background-color: #f0f0f0fb;
+    text-align: center;
     position: relative;
     z-index: 1;
-    margin: 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buscador button {
+    padding: 10px 20px;
+    background-color: #8b8989;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buscador button:hover {
+    background-color: #777777b4;
 }
 
 h1 {
@@ -46,8 +75,9 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    width: 100%;
-
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -74,6 +104,7 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .menu li a {
     text-decoration: none;
     color: #000000;
@@ -81,6 +112,7 @@ h1 {
     font-size: 1rem;
     font-family: "Parkinsans", sans-serif;
 }
+
 .submenu {
     display: none;
     position: absolute;
@@ -148,6 +180,7 @@ h1 {
     margin: 0.6rem auto;
 
 }
+
 .sec_indice h2 {
     color: #696969;
     font-family: "Parkinsans", sans-serif;
@@ -161,56 +194,138 @@ h1 {
 .indice {
     display: grid;
     width: 70%;
+    height: 25rem;
     margin: 0 auto;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
     list-style: none;
+    padding: 10px;
+    background-color: #c5c2c2;
     position: relative;
 
 }
 
 .indice li {
-    padding: 5px;
-    background-color: #6b6b6bad;
-    border: 1px solid #ccc;
+    background-color: #8b8989;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease-in-out;
-    cursor: pointer;
     text-align: center;
-    font-family: "Parkinsans", sans-serif
-
+    font-family: "Parkinsans", sans-serif;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .indice li:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background-color: #777777b4;
+    cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(39, 39, 39, 0.1));
+    transition: transform 0.3s ease;
 }
 
 .indice li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-decoration: none;
-    color: #333232;
-   font-weight: bold;
-    font-size: 1.3rem;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Parkinsans", sans-serif;
 }
 
 .indice li p {
-    font-size: 0.8rem;
     color: #000000;
-    font-weight: normal;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 1em;
+    text-shadow: #686868 0px 0px 5px;
 }
 
-.fotos-indice{
-    margin-top: 0.8rem;
+.indice li a img {
     width: 100%;
-    height: 60%;
-    position: relative;
-    overflow: hidden;
+    height: 120px;
     border-radius: 5px;
-   filter: drop-shadow(0 0 10px #000000);
-   
+    margin-bottom: 10px;
+
 }
 
- 
+.articulo-pizza-ingredientes {
+    display: grid;
+    width: 70%;
+    height: 25rem;
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 5px 10px;
+    background-color: #d8d5d5b6;
+    position: relative;
+    border-radius: 10px;
+}
+
+.tabla-receta-pizza {
+    width: 100%;
+    margin: auto;
+    height: 80%;
+    text-align: center;
+    font-family: parkinsans;
+    background-color: #c5c2c2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    border: #686868 1px solid;
+}
+
+.tabla-receta-pizza th:hover,
+.tabla-receta-pizza td:hover  {
+    background-color: rgb(145, 142, 142);
+}
+
+#pizza-receta-imagen {
+    margin: auto;
+    width: 95%;
+    height: 80%;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.562);
+}
+.presentacion-pizza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-family: "Parkinsans", sans-serif;
+    color: #000000;
+}
+.articulo-pizza-pasos h3{
+    text-align: center;
+}
+.articulo-pizza-pasos{
+    display: flex;
+    width: 90%;
+    border-radius: 15px;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 10px 0;
+    font-family: "Parkinsans", sans-serif;
+    color: #eeeeee;
+    font-size: 0.9em;
+    background-image: url(/imagenes/foto\ pizza\ 2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: #000000 2px 3px 8px;
+
+}
+

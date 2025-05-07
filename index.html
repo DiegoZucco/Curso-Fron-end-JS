@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/CSS/index.css">
+
     <title>Mi libro de Recetas</title>
 </head>
 
@@ -27,7 +28,7 @@
             <h1>Mi libro de Recetas</h1>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="indice.html">Indice</a></li>
+                <li><a href="#indice">Indice</a></li>
                 <li><a href="#">Secciones</a>
                     <ul class="submenu">
                         <li><a href="#pizzas">Pizzas</a></li>
@@ -56,77 +57,100 @@
                     ¡Anímate a experimentar y crear tus propias recetas!</p>
             </article>
         </section>
-        <section class="sec_indice">
+        <section class="sec_indice" id="indice">
             <h2>Indice de recetas</h2>
             <ul class="indice">
-                <li><a href="#pizzas">Pizzas
+                <li><a href="#pizzas">
+                        <h3>Pizzas</h3>
                         <img class="fotos-indice" src="/imagenes/foto pizza.png" alt="imagen de pizza">
-                        <p>Deliciosas recetas de diferentes clases de pizzas,
-                            con la cual podras sorprender a tus amigos y familiares</p>
                     </a>
+                    <p>Deliciosas recetas de diferentes clases de pizzas,
+                        con la cual podras sorprender a tus amigos y familiares</p>
                 </li>
-                <li><a href="#carnes">Carnes
-                        <img class="fotos-indice" src="/imagenes/bondiola.PNG" alt="imagen de carne">
-                        <p>Algunas de mis recetas con carnes que he recopilado a lo largo de los años,
-                            que son fáciles de preparar y perfectas para cualquier ocasión.</p>
+                <li><a href="#carnes">
+                        <h3>Carnes</h3>
+                        <img class="fotos-indice" src="/imagenes/Bondiola-de-cerdo-a-la-cacerola2.jpg"
+                            alt="imagen de carne">
                     </a>
+                    <p>Algunas de mis recetas con carnes favoritas,
+                        las cuales son perfectas para cualquier ocasión.</p>
                 </li>
-                <li><a href="#postres">Postres
+                <li><a href="#postres">
+                        <h3>Postres</h3>
                         <img class="fotos-indice" src="/imagenes/tarta-de-coco-2.jpg" alt="imagen de postre">
-                        <p>Postres deliciosos para agasajar tus seres queridos
-                            o simplemente para disfrutar en una tarde de verano</p>
                     </a>
+                    <p>Postres deliciosos para agasajar tus seres queridos
+                        o simplemente para disfrutar en una tarde de verano</p>
                 </li>
-
             </ul>
 
         </section>
         <hr>
         <section id="pizzas">
-            <h1>Pizzas</h1>
-            <h3 id="recetaPizza">Pizza al 70%</h3>
-            <p>Esta receta es ideal para una cena rápida y deliciosa.</p>
-            <p>La masa es muy fácil de hacer y puedes agregar tus ingredientes favoritos.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Ingrediente</th>
-                        <th>Cantidad</th>
+            <article class="presentacion-pizza">
+                <h1>Pizzas</h1>
+                <h3 id="recetaPizza">Pizza de muzzarella, masa al 70% de hidratacion</h3>
+                <p>Esta receta es ideal para una cena rápida y deliciosa.</p>
+                <p>La masa es muy fácil de hacer y puedes agregar tus ingredientes favoritos.</p>
+            </article>
+            <article class="articulo-pizza-ingredientes">
+                <table class="tabla-receta-pizza">
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Harina</td>
-                        <td>1 kilogramo</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harina</td>
+                            <td>1 kilogramo</td>
 
-                    </tr>
-                    <tr>
-                        <td>levadura</td>
-                        <td>50 gr</td>
+                        </tr>
+                        <tr>
+                            <td>levadura</td>
+                            <td>45 gr</td>
 
-                    </tr>
-                    <tr>
-                        <td>Agua tibia</td>
-                        <td>700 ml</td>
+                        </tr>
+                        <tr>
+                            <td>Agua tibia</td>
+                            <td>640 gr</td>
 
-                    </tr>
-                    <tr>
-                        <td>sal fina</td>
-                        <td>20 gr</td>
+                        </tr>
+                        <tr>
+                            <td>sal fina</td>
+                            <td>20 gr</td>
 
-                    </tr>
-                    <tr>
-                        <td>aceite</td>
-                        <td>50 ml</td>
+                        </tr>
+                        <tr>
+                            <td>aceite</td>
+                            <td>30 ml</td>
 
-                    </tr>
-                    <tr>
-                        <td>salsa de tomate</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3>Instrucciones</h3>
+                        </tr>
+                        <tr>
+                            <td>salsa de tomate</td>
+                            <td>cantidad necesaria</td>
+                        </tr>
+                        <tr>
+                            <td>queso muzzarella</td>
+                            <td>entre 250 gr y 280 gr</td>
+                        </tr>
+                        <tr>
+                            <td>orégano</td>
+                            <td>al gusto</td>
+                        </tr>
+                        <tr>
+                            <td>aceitunas</td>
+                            <td>al gusto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img id="pizza-receta-imagen" src="/imagenes/pizza-con-tomate-albahaca-y-mozzarella-1080x671.jpg" alt="">
+            </article>
+            <article class="articulo-pizza-pasos">
+                
+            <h3>Paso a paso</h3>
             <ol>
                 <li>Como primer paso colocamos en un recipiente la harina junto con la sal y mezclamos</li>
                 <li>Luego en un recipiente aparte colocamos la levadura con un poco de agua tibia y la disolvemos bien
@@ -140,8 +164,23 @@
                 <li>Ya pasado este tiempo, procedemos a cortar la masa en bollos de 410, 420 gramos.</li>
                 <li>A cada trozo le damos forma de bollo, y dejamos reposar alrededor de 30 a 40 minutos, <br>
                     para lograr un buen levado de la masa</li>
+                <li>
+                    Una vez que la masa haya levado, la estiramos en las pizzeras, <br>
+                    y procedemos a colocar la salsa de tomate. <br>
+                    Dejamos levar una vez mas, hasta lograr el tamaño deseado.</li>
+                <li>Una vez que la masa haya levado, la llevamos al horno precalentado a 250 grados, <br>
+                    y la cocinamos por 10 minutos.</li>
+                <li>Pasados los 10 minutos, retiramos la pizza del horno y la cubrimos con el queso muzzarella <br>
+                    y el orégano al gusto.</li>
+                <li>Volvemos a colocar la pizza en el horno y la cocinamos por 5 minutos más, <br>
+                    o hasta que el queso se derrita y la masa esté dorada.</li>
+                <li>Retiramos la pizza del horno y la dejamos enfriar un poco antes de cortarla.</li>
+                <li>¡Listo! Ahora puedes disfrutar de una deliciosa pizza de muzzarella con masa al 70% de hidratación.
+                </li>
+                </li>
 
             </ol>
+        </article>
         </section>
         <section id="carnes">
             <h1>Carnes</h1>
@@ -187,6 +226,18 @@
 
                 </tbody>
             </table>
+            <h3>Paso a paso</h3>
+            <ol>
+                <li>Como primer paso, cortamos la bondiola en trozos de aproximadamente 2 cm.</li>
+                <li>En una cacerola grande, calentamos un poco de aceite y doramos la bondiola por todos lados.</li>
+                <li>Retiramos la bondiola de la cacerola y reservamos.</li>
+                <li>En la misma cacerola, agregamos la cebolla, el pimiento rojo y el ajo picados.</li>
+                <li>Rehogamos las verduras hasta que estén tiernas.</li>
+                <li>Agregamos la bondiola nuevamente a la cacerola y cubrimos con el caldo de carne.</li>
+                <li>Cocinamos a fuego lento durante aproximadamente 1 hora o hasta que la carne esté tierna.</li>
+                <li>Retiramos del fuego y dejamos reposar unos minutos antes de servir.</li>
+                <li>¡Listo! Ahora puedes disfrutar de una deliciosa bondiola a la cacerola.</li>
+                <li>Esta receta es ideal para acompañar con puré de papas o ensalada.</li>
         </section>
         <section id="postres">
             <h1>Postres</h1>
@@ -197,13 +248,13 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Ingrediente</th>
+                        <th>Ingrediente para la masa</th>
                         <th>Cantidad</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
+                        <td>Harina 0000</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -226,8 +277,11 @@
             </table>
         </section>
     </main>
+
+    <form action="" method="post"></form>
     <footer>
         <p>&copy; 2025 Mi Sitio Web</p>
+        i
     </footer>
 
     <script src="app.js"></script>
