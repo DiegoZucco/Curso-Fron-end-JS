@@ -74,7 +74,7 @@ header {
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: parkinsans, sans-serif;
-    overflow-x: auto; /
+    overflow-x: auto; 
 }
 
 .nav img {
@@ -132,7 +132,7 @@ header {
     list-style: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    z-index: 1000;
+    
 }
 
 .menu li:hover .submenu {
@@ -159,7 +159,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(2px);
-    z-index: -1;
+   
     box-sizing: border-box;
 }
 
