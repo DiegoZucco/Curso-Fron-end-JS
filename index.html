@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <title>Mi libro de Recetas</title>
@@ -19,11 +20,11 @@
 <body>
     <header class="header">
 
-        <div class="buscador">
-            <input type="text" placeholder="Buscar recetas...">
-            <button type="submit">Buscar</button>
+        <div id="buscador" class="buscador">
+            <input type="text" id="buscar-input" placeholder="Buscar recetas...">
+            <button id="boton-buscar" type="submit">Buscar</button>
         </div>
-        <nav class="nav">
+        <nav id="nav" class="nav">
             <div class="logo">
                 <img src="./imagenes/Logo-removebg-preview.png" alt="logo">
                 <h3>Mi libro de Recetas</h3>
@@ -106,7 +107,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Harina</td>
+                            <td>Harina 000</td>
                             <td>1 kilogramo</td>
 
                         </tr>
@@ -151,7 +152,7 @@
                 <img id="pizza-receta-imagen" src="./imagenes/pizza-con-tomate-albahaca-y-mozzarella-1080x671.jpg"
                     alt="">
             </article>
-            <article class="articulo-pizza-pasos">
+            <article class="articulo-pasos">
                 <h3>Paso a paso</h3>
                 <ol>
                     <li>Como primer paso colocamos en un recipiente la harina junto con la sal y mezclamos</li>
@@ -187,6 +188,11 @@
                 </ol>
             </article>
         </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
         <section class="carnes" id="carnes">
             <article class="presentacion-carnes">
                 <h1>Carnes</h1>
@@ -238,7 +244,7 @@
                     </tbody>
                 </table>
             </article>
-            <article class="articulo-carnes-pasos">
+            <article class="articulo-pasos">
                 <h3>Paso a paso</h3>
                 <ol>
                     <li>Como primer paso, cortamos la bondiola en trozos de aproximadamente 2 cm.</li>
@@ -253,6 +259,11 @@
                     <li>Esta receta es ideal para acompañar con puré de papas o ensalada.</li>
             </article>
         </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
         <section class="postres" id="postres">
             <article class="presentacion-postres">
                 <h1>Postres</h1>
@@ -326,7 +337,7 @@
                 </div>
                 <img src="./imagenes/tarta de coco.jpg" alt="una tarta de coco">
             </article>
-            <article class="articulo-postres-pasos">
+            <article class="articulo-pasos">
                 <h3>Paso a paso</h3>
                 <ol>
                     <li>Como primer paso, en un bol colocamos la harina, el azucar, la sal y la manteca.</li>
@@ -347,31 +358,48 @@
                 </ol>
             </article>
         </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
+
+        <section class="seccion-contacto" id="seccion-contacto">
+            <article class="presentacion-contacto">
+                <h2>Contacto</h2>
+                <p>Si tienes alguna duda o sugerencia, no dudes en contactarme.</p>
+                <p>Estoy siempre abierto a nuevas ideas y consejos.</p>
+            </article>
+            <article class="contacto">
+                <form id="form-contacto" class="form-contacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <button id="button" type="submit">Enviar</button>
+
+                </form>
+            </article>
+            <img class="imagen-contacto" src="./imagenes/mi-gran-libro-de-recetas.jpg" alt="">
+        </section>
+        <div id="pop-up">
+            <span id="cerrar-pop-up">X</span>
+            <div id="contenido-pop-up"></div>
+            <h3>Su mensaje ha sido enviado correctamente</h3>
+            <p>Gracias por contactarnos, a la brevedad nos comunicaremos con usted.</p>
+
+        </div>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
     </main>
-    <section class="seccion-contacto" id="seccion-contacto">
-        <article class="presentacion-contacto">
-            <h2>Contacto</h2>
-            <p>Si tienes alguna duda o sugerencia, no dudes en contactarme.</p>
-            <p>Estoy siempre abierto a nuevas ideas y consejos.</p>
-        </article>
-        <article class="contacto">
-            <form id="form-contacto" class="form-contacto" action="" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </article>
-        <img class="imagen-contacto" src="./imagenes/mi-gran-libro-de-recetas.jpg" alt="">
-    </section>
-
-
     <footer>
         <div>
             <p>&copy; 2025 Mi Sitio Web</p>
@@ -397,7 +425,7 @@
 
     </footer>
 
-    <script src="app.js"></script>
+    <script src="/JS/app.js"></script>
 
 </body>
 
