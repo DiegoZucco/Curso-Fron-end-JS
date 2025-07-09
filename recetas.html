@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un sitio web de recetas de cocina.">
+    <meta name="keywords" content="recetas, cocina, comida, saludable">
+    <meta name="author" content="Diego Zuccolilli">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Mi libro de Recetas</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div id="buscador" class="buscador">
+            <input type="text" id="buscar-input" placeholder="Buscar recetas...">
+            <button id="boton-buscar" type="submit">Buscar</button>
+        </div>
+        <nav id="nav" class="nav">
+            <div class="logo">
+                <img src="./imagenes/Logo-removebg-preview.png" alt="logo">
+
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#indice">Indice</a></li>
+                <li><a href="index.html#form-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="pizzas" id="pizzas">
+            <article class="presentacion-pizza">
+                <h1>Pizzas</h1>
+                <h3>Pizza de muzzarella, masa al 70% de hidratacion</h3>
+                <p>Esta receta es ideal para una cena rápida y deliciosa. <br>
+                    La masa es muy fácil de hacer y puedes agregar tus ingredientes favoritos.</p>
+            </article>
+            <article class="articulo-pizza-ingredientes">
+                <table class="tabla-receta-pizza">
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harina 000</td>
+                            <td>1 kilogramo</td>
+
+                        </tr>
+                        <tr>
+                            <td>levadura</td>
+                            <td>45 gr</td>
+
+                        </tr>
+                        <tr>
+                            <td>Agua tibia</td>
+                            <td>640 gr</td>
+
+                        </tr>
+                        <tr>
+                            <td>sal fina</td>
+                            <td>20 gr</td>
+
+                        </tr>
+                        <tr>
+                            <td>aceite</td>
+                            <td>30 ml</td>
+
+                        </tr>
+                        <tr>
+                            <td>salsa de tomate</td>
+                            <td>cantidad necesaria</td>
+                        </tr>
+                        <tr>
+                            <td>queso muzzarella</td>
+                            <td>entre 250 gr y 280 gr</td>
+                        </tr>
+                        <tr>
+                            <td>orégano</td>
+                            <td>al gusto</td>
+                        </tr>
+                        <tr>
+                            <td>aceitunas</td>
+                            <td>al gusto</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img id="pizza-receta-imagen" src="./imagenes/pizza-con-tomate-albahaca-y-mozzarella-1080x671.jpg"
+                    alt="">
+            </article>
+            <article class="articulo-pasos">
+                <h3>Paso a paso</h3>
+                <ol>
+                    <li>Como primer paso colocamos en un recipiente la harina junto con la sal y mezclamos</li>
+                    <li>Luego en un recipiente aparte colocamos la levadura con un poco de agua tibia y la
+                        disolvemos
+                        bien
+                    </li>
+                    <li>A continuacion completamos el resto de agua</li>
+                    <li>Incorporamos el agua a la harina y empezamos a mezclar hasta conseguir una consistencia algo
+                        homogenea</li>
+                    <li>Incorporamos el aceite y comenzamos con el proceso de amasado</li>
+                    <li>Una vez lista la masa, la llevamos a la mesada, le hacemos unos pliegues
+                        y dejamos reposar por 15 minutos, tapando la masa para que no se seque</li>
+                    <li>Ya pasado este tiempo, procedemos a cortar la masa en trozos de 410, 420 gramos.</li>
+                    <li>A cada trozo le damos forma de bollo, y dejamos reposar alrededor de 30 a 40 minutos,
+                        para lograr un buen levado de la masa. Con estas cantidades saldran 4 pizzas grandes</li>
+                    <li>
+                        Una vez que la masa haya levado, la estiramos en las pizzeras,
+                        y procedemos a colocar la salsa de tomate.
+                        Dejamos levar una vez mas, hasta lograr el tamaño deseado.</li>
+                    <li>Una vez que la masa haya levado, la llevamos al horno precalentado a 250 grados,
+                        y la cocinamos por 10 minutos.</li>
+                    <li>Pasados los 10 minutos, retiramos la pizza del horno y la cubrimos con el queso muzzarella
+
+                        y el orégano al gusto.
+                    </li>
+                    <li>Volvemos a colocar la pizza en el horno y la cocinamos por 5 minutos más,
+                        o hasta que el queso se derrita y la masa esté dorada.</li>
+                    <li>Retiramos la pizza del horno y la dejamos enfriar un poco antes de cortarla.</li>
+                    <li>¡Listo! Ahora puedes disfrutar de una deliciosa pizza de muzzarella con masa al 70% de
+                        hidratación.
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
+        <section class="carnes" id="carnes">
+            <article class="presentacion-carnes">
+                <h1>Carnes</h1>
+                <h3>Bondiola a la cacerola</h3>
+                <p>Una receta deliciosa, con la cual podras agasajar a su familia</p>
+                <p>La bondiola es una carne muy sabrosa y tierna, ideal para cocinar a la cacerola.</p>
+                <p>Esta receta es fácil de hacer y queda muy bien acompañada con puré de papas o ensalada.</p>
+            </article>
+            <article class="articulo-carnes-ingredientes">
+                <img id="bondiola-receta-imagen" src="./imagenes/Bondiola-de-cerdo-a-la-cacerola2.jpg"
+                    alt="imagen de bondiola">
+
+                <table class="tabla-receta-carnes">
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bondiola</td>
+                            <td>1 kilogramo</td>
+
+                        </tr>
+                        <tr>
+                            <td>Cebolla</td>
+                            <td>1 unidad</td>
+
+                        </tr>
+                        <tr>
+                            <td>Pimiento rojo</td>
+                            <td>1 unidad</td>
+
+                        </tr>
+                        <tr>
+                            <td>Ajo</td>
+                            <td>2 dientes</td>
+
+                        </tr>
+                        <tr>
+                            <td>Caldo de carne</td>
+                            <td>1 litro</td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </article>
+            <article class="articulo-pasos">
+                <h3>Paso a paso</h3>
+                <ol>
+                    <li>Como primer paso, cortamos la bondiola en trozos de aproximadamente 2 cm.</li>
+                    <li>En una cacerola grande, calentamos un poco de aceite y doramos la bondiola por todos lados.</li>
+                    <li>Retiramos la bondiola de la cacerola y reservamos.</li>
+                    <li>En la misma cacerola, agregamos la cebolla, el pimiento rojo y el ajo picados.</li>
+                    <li>Rehogamos las verduras hasta que estén tiernas.</li>
+                    <li>Agregamos la bondiola nuevamente a la cacerola y cubrimos con el caldo de carne.</li>
+                    <li>Cocinamos a fuego lento durante aproximadamente 1 hora o hasta que la carne esté tierna.</li>
+                    <li>Retiramos del fuego y dejamos reposar unos minutos antes de servir.</li>
+                    <li>¡Listo! Ahora puedes disfrutar de una deliciosa bondiola a la cacerola.</li>
+                    <li>Esta receta es ideal para acompañar con puré de papas o ensalada.</li>
+            </article>
+        </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+
+        <section class="postres" id="postres">
+            <article class="presentacion-postres">
+                <h1>Postres</h1>
+                <h3 id="recetaPostre">Tarta de coco</h3>
+                <p>Una receta deliciosa, con la cual podras agasajar a su familia</p>
+                <p>La tarta de coco es un postre muy sabroso y fácil de hacer.</p>
+                <p>Esta receta es ideal para una merienda o un cumpleaños.</p>
+            </article>
+            <article class="articulo-postres-ingredientes">
+                <div class="tabla-receta-postres">
+                    <table class="tabla-receta-postres-masa">
+                        <thead>
+                            <tr>
+                                <th>Ingrediente para la masa</th>
+                                <th>Cantidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Harina 0000</td>
+                                <td>200 gr</td>
+                            </tr>
+                            <tr>
+                                <td>Azucar</td>
+                                <td>50 gr</td>
+                            </tr>
+                            <tr>
+                                <td>Sal</td>
+                                <td>Una pizca</td>
+                            </tr>
+                            <tr>
+                                <td>Manteca</td>
+                                <td>100 gr</td>
+                            </tr>
+                            <tr>
+                                <td>Huevo</td>
+                                <td>1 unidad</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="tabla-receta-postres-relleno">
+                        <thead>
+                            <tr>
+                                <th>Ingrediente para el relleno</th>
+                                <th>Cantidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dulce de leche repostero</td>
+                                <td>400 gr</td>
+                            </tr>
+                            <tr>
+                                <td>Huevos</td>
+                                <td>2 unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Leche condensada</td>
+                                <td>Un pote chico</td>
+                            </tr>
+                            <tr>
+                                <td>Coco rallado</td>
+                                <td>200 gr</td>
+                            </tr>
+                            <tr>
+                                <td>Leche</td>
+                                <td>1/2 taza</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <img src="./imagenes/tarta de coco.jpg" alt="una tarta de coco">
+            </article>
+            <article class="articulo-pasos">
+                <h3>Paso a paso</h3>
+                <ol>
+                    <li>Como primer paso, en un bol colocamos la harina, el azucar, la sal y la manteca.</li>
+                    <li>Mezclamos bien hasta que se forme una masa homogenea.</li>
+                    <li>Agregamos el huevo y mezclamos nuevamente.</li>
+                    <li>Una vez formada una masa homogenea, dejamos reposar 30 minutos en heladera</li>
+                    <li>Ya pasado este tiempo, enmantecamos un molde, estiramos la masa y cocinamos con horno a 180° por
+                        10 minutos</li>
+                    <li>Retiramos del horno y dejamos enfriar antes de colocar el relleno</li>
+                    <li>Con ayuda de una cuchara esparcimos sobre la masa el dulce de leche, tratando de que sea en
+                        forma pareja</li>
+                    <li>En otro bol colocamos el coco, la leche condensada, los huevos y la media taza de leche.
+                        Mezclamos bien</li>
+                    <li>Volcamos la mezcla sobre nuestra masa con dulce de leche, llevamos a horno suave, por alrededor
+                        de 40 minutos</li>
+                    <li>Y listo a disfrutar de una deliciosa tarta de coco</li>
+                    <li>Esta receta es ideal para acompañar con helado o crema batida.</li>
+                </ol>
+            </article>
+        </section>
+
+        <div>
+            <button id="botonInicio"><a href="#nav">Inicio</a></button>
+        </div>
+        <footer>
+            <div>
+                <p>&copy; 2025 Mi Sitio Web</p>
+                <p>Desarrollado por Diego Zuccolilli</p>
+            </div>
+            <img src="./imagenes/Logo-removebg-preview.png" alt="logo" class="logo-footer">
+            <div>
+                <p>Seguinos en nuestras redes</p>
+                <ul class="redes-footer">
+                    <li><a href="https://www.facebook.com/"><img class="redes-logo" src="./imagenes/iconos/facebook.png"
+                                alt="Facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img class="redes-logo"
+                                src="./imagenes/iconos/instagram.png" alt="Instagram"></a>
+                    </li>
+                    <li><a href="https://www.twitter.com/"><img class="redes-logo" src="./imagenes/iconos/logotipos.png"
+                                alt="Twitter"></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="redes-logo" src="./imagenes/iconos/youtube.png"
+                                alt="YouTube"></a></li>
+                </ul>
+            </div>
+
+
+        </footer>
+
+        <script src="/JS/app.js"></script>
+
+</body>
+
+</html>
