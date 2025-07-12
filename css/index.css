@@ -246,21 +246,33 @@ header {
     margin: 20px auto;
     padding: 20px 0;
     text-align: center;
-    background-image: url(../imagenes/foto\ pizza\ 2.png);
-    background-size: cover;
+
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
+    font-weight: 800;
+}
+#card-pizzas {
+    background-image: url(../imagenes/foto\ pizza\ 2.png);
+    background-size: cover;
+}
+#card-carnes {
+    background-image: url(../imagenes/fondo-carnes.jpg);
+    background-size: cover;
 }
 
+#card-postres {
+    background-image: url(../imagenes/fondo-postres.jpg);
+    background-size: cover;
+}
 .card-recetas h2 {
     display: inline-block;
-    color: #acacac;
+    color: #242424;
     font-family: "Parkinsans", sans-serif;
     margin:0 0 0 10px;
     padding: 20px 0;
     font-size: 1.5rem;
-    text-shadow: #8a8a8a 0px 0px 3px;
+    text-shadow: #c4c0c0 0px 0px 3px;
 }
 
 .card-listado {
@@ -430,25 +442,35 @@ header {
     margin: 0 auto;
 }
 
-.presentacion-carnes {
+.carnes{
+    width: 90%;
+    margin: 20px auto;
+    background-image: url(../imagenes/fondo-bondiola.webp);
+    background-size: cover;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.presentacion-carnes p,
+.presentacion-carnes h3 {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
     font-family: "Parkinsans", sans-serif;
-    color: #000000;
+    color: #cecdcd;
+    font-weight: 800;
+    text-shadow: #141414 2px 0px 3px;
 }
 
-.presentacion-carnes h1 {
+
+.carnes h1 {
     display: inline-block;
-    border: 1px solid #000000;
-    border-radius: 999px;
     color: #000000;
     text-align: center;
     margin-top: 20px;
     font-family: "Parkinsans", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px 40px;
-    background: #fff;
+    
 }
 
 /*fin de la seccion presentacion carnes*/
@@ -478,6 +500,7 @@ header {
     border-radius: 15px;
     overflow: hidden;
     border: #686868 1px solid;
+   
 }
 
 
@@ -514,6 +537,20 @@ header {
     overflow: hidden;
     list-style-position: inside;
 
+}
+.volver-indice a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #9e9e9e;
+}
+.volver-indice a:hover {
+    color: #383737;
+    background-color: #dacaca;    
+    border-radius: 5px;
 }
 
 .presentacion-postres {
