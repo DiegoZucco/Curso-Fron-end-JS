@@ -10,6 +10,8 @@ body {
     padding: 0;
     width: 90vw;
     margin: auto;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #958f80d3 45%, #ffffff  55%);
 }
 
 
@@ -61,61 +63,63 @@ header {
 
 
 .nav {
-    background-color: #e0e0e0f5;
-    color: rgb(14, 13, 13);
+
+    background-image: url(/imagenes/fondo-indice.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
     padding: 10px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "logo menu1"
+        "presentacion presentacion";
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "parkinsans", sans-serif;
-
-    z-index: 10;
-    gap: 10%;
+    border-radius: 10px;
 }
 
-.nav img {
+.logo img {
     width: 70px;
     height: 60px;
-    border-radius: 10px;
-
 }
 
 .logo {
-    margin: auto;
-    width: 30%;
+    grid-area: logo;
+    margin: 10px auto;
+    width: 20%;
 }
 
 .menu {
-    width: 100%;
+    grid-area: menu1;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     list-style: none;
     flex-direction: row;
-    padding: 0%;
+    padding: 5px;
     gap: 20px;
+
 }
-
-
 
 .menu li {
     position: relative;
-    padding: 10px 20px;
-    color: #000000;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    padding: 5px 15px;
 }
 
 .menu li:hover {
-    background-color: #bbb8b888;
-    color: #000000;
+    background-color: #cd9d8d80;
+    transition: background-color 1s ease, color 0.6s ease, transform 1s ease;
     cursor: pointer;
     border-radius: 5px;
+    filter: drop-shadow(0 2px 4px rgba(39, 39, 39, 0.1));
+    transform: scale(1.05);
 }
 
 .menu li a {
@@ -124,135 +128,107 @@ header {
     font-weight: bold;
     font-size: 1rem;
     font-family: "Parkinsans", sans-serif;
+    text-shadow: #adaaaa 0px 0px 3px;
+    text-align: center;
+   
 }
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 12%;
-    background-color: #bdbcbcad;
-    padding: 5px;
-    list-style: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 10;
-
-}
-
-.menu li:hover .submenu {
-    display: block;
-    z-index: 10;
-
-
-}
-
-.submenu li {
-    padding: 5px 10px;
-    color: #000000;
-    text-decoration: none;
-    font-family: "Parkinsans", sans-serif;
-    font-size: 0.9rem;
-    z-index: 10;
-    ;
-}
-
-.sec_bienvenida::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-image: url(/imagenes/mi-gran-libro-de-recetas.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(2px);
-    box-sizing: border-box;
-}
-
 
 .sec_bienvenida {
-box-sizing: border-box;
-
-}
-
-.sec_bienvenida h2 {
-    color: #7c7a7a;
-    font-family: "Parkinsans", sans-serif;
+    grid-area: presentacion;
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto 30px auto;
     text-align: center;
+    align-items: center;
+}
+.sec_bienvenida h1 {
+    font-family: "Parkinsans", sans-serif;
+    color: #000000;
+    font-size: 1.5rem;
     margin: 0 auto;
     padding: 10px 0;
-    text-shadow: #686868 0px 0px 5px;
-}
+    text-shadow: #ffffff 0px 0px 3px;}
 
-#parrafo-bienvenida {
-    color: #5f5e5e;
-    position: relative;
+.sec_bienvenida p {
     font-family: "Parkinsans", sans-serif;
-    width: 60%;
+    color: #3b3a3a;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.sec_indice{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
     text-align: center;
-    margin: 0.6rem auto;
-
+    background-image: url(../imagenes/fondo-indice2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .sec_indice h2 {
-    color: #696969;
+    display: inline-block;
+    color: #161616;
     font-family: "Parkinsans", sans-serif;
-    text-align: center;
-    margin: 0 auto;
+    margin:0 0 0 10px;
+   
     padding: 20px 0;
-    font-size: 2rem;
-    text-shadow: #686868 0px 0px 3px;
+    font-size: 1.5rem;
+    text-shadow: #141414 0px 0px 3px;
 }
 
 .indice {
     display: grid;
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 50%;
+    height: 60%;
+    margin: 0 0 20px auto;  ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
     gap: 10px;
     list-style: none;
-    padding: 10px;
-    background-color: #c5c2c2;
+    padding: 5px;
     position: relative;
+    border-radius: 10px;
 
 }
 
 .indice li {
-    background-color: #8b8989;
+    background-color: #e2e2e246;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: "Parkinsans", sans-serif;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 2s ease, background-color 2s ease;
 }
 
 .indice li:hover {
     transform: scale(1.05);
-    background-color: #777777b4;
+    background-color: #f3f3f3d5;
+
     cursor: pointer;
     filter: drop-shadow(0 2px 4px rgba(39, 39, 39, 0.1));
-    transition: transform 0.3s ease;
+    transition: transform 1s ease, background-color 1s ease;
 }
 
 .indice li a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: "Parkinsans", sans-serif;
 }
 
 .indice li p {
     color: #000000;
     font-family: "Parkinsans", sans-serif;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
-    padding: 10px 0;
-    font-size: 1em;
+    padding: 1px 0;
+    font-size: 0.8rem;
     text-shadow: #686868 0px 0px 5px;
 }
 
@@ -260,10 +236,107 @@ box-sizing: border-box;
     width: 100%;
     height: 45%;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-/*fin de la seccion indice*/
+/*fin de la seccion indice general*/
+/*comienzo de seccion receta pizza*/
+.card-recetas {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-weight: 800;
+}
+#card-pizzas {
+    background-image: url(../imagenes/foto\ pizza\ 2.png);
+    background-size: cover;
+}
+#card-carnes {
+    background-image: url(../imagenes/fondo-carnes.jpg);
+    background-size: cover;
+}
+
+#card-postres {
+    background-image: url(../imagenes/fondo-postres.jpg);
+    background-size: cover;
+}
+.card-recetas h2 {
+    display: inline-block;
+    color: #242424;
+    font-family: "Parkinsans", sans-serif;
+    margin:0 0 0 10px;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    text-shadow: #c4c0c0 0px 0px 3px;
+}
+
+.card-listado {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;  ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 5px;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.card-listado li {
+
+    height: 100%;
+    background-color: #a7a6a646;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+    font-family: "Parkinsans", sans-serif;
+    transition: transform 2s ease, background-color 2s ease;
+}
+
+.card-listado li:hover {
+    transform: scale(1.05);
+    background-color: #f3f3f3d5;
+
+    cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(39, 39, 39, 0.1));
+    transition: transform 1s ease, background-color 1s ease;
+}
+
+.card-listado li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.card-listado li p {
+    color: #000000;
+    font-family: "Parkinsans", sans-serif;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1px 0;
+    font-size: 0.7rem;
+    text-shadow: #686868 0px 0px 5px;
+}
+
+.card-listado li a img {
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
 /*inicio de la seccion receta pizza*/
 
 
@@ -369,25 +442,35 @@ box-sizing: border-box;
     margin: 0 auto;
 }
 
-.presentacion-carnes {
+.carnes{
+    width: 90%;
+    margin: 20px auto;
+    background-image: url(../imagenes/fondo-bondiola.webp);
+    background-size: cover;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.presentacion-carnes p,
+.presentacion-carnes h3 {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
     font-family: "Parkinsans", sans-serif;
-    color: #000000;
+    color: #cecdcd;
+    font-weight: 800;
+    text-shadow: #141414 2px 0px 3px;
 }
 
-.presentacion-carnes h1 {
+
+.carnes h1 {
     display: inline-block;
-    border: 1px solid #000000;
-    border-radius: 999px;
     color: #000000;
     text-align: center;
     margin-top: 20px;
     font-family: "Parkinsans", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px 40px;
-    background: #fff;
+    
 }
 
 /*fin de la seccion presentacion carnes*/
@@ -417,6 +500,7 @@ box-sizing: border-box;
     border-radius: 15px;
     overflow: hidden;
     border: #686868 1px solid;
+   
 }
 
 
@@ -453,6 +537,20 @@ box-sizing: border-box;
     overflow: hidden;
     list-style-position: inside;
 
+}
+.volver-indice a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #9e9e9e;
+}
+.volver-indice a:hover {
+    color: #383737;
+    background-color: #dacaca;    
+    border-radius: 5px;
 }
 
 .presentacion-postres {
@@ -727,7 +825,8 @@ footer ul li {
 footer {
     display: flex;
     flex-direction: row;
-    background-color: #f0f0f0fb;
+    background-image: url(../imagenes/fondo-footer.webp);
+    background-size: cover;
     padding: 20px;
     text-align: center;
     font-family: "Parkinsans", sans-serif;
@@ -736,6 +835,7 @@ footer {
     z-index: 1;
     margin-top: 20px;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 
