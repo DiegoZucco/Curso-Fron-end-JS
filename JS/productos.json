@@ -1,0 +1,22 @@
+
+[
+
+  {
+    "ID": "AB1234",
+    "nombre_articulo": "Mis mejores pizzas",
+    "precio": "$12000",
+    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+  },
+  {
+    "ID": "CD5678",
+    "nombre_articulo": "Carnes deliciosas",
+    "precio": "$15000",
+    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+  },
+  {
+    "ID": "EF9012",
+    "nombre_articulo": "Dulces tentaciones",
+    "precio": "$14000",
+    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+  }
+]

@@ -4,7 +4,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -89,7 +93,7 @@ header {
 
 .nav {
 
-    background-image: url(/imagenes/fondo-indice.jpg);
+    background-image: url(../imagenes/fondo-indice.jpg);
     background-size: cover;
     width: 100%;
     margin: 0 auto;
