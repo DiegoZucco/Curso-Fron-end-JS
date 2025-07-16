@@ -8,8 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    min-height: 100vh;
+ 
     background: linear-gradient(130deg, #958f80d3 48%, #ffffff  52%);
 }
 
@@ -59,7 +58,34 @@ header {
     background-color: #777777b4;
 }
 
+.buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.carrito-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.carrito-img {
+    width: 32px;
+    height: 32px;
+}
+
+.carrito-contador {
+    background: #e67e22;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 1rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
 
 .nav {
 
@@ -310,17 +336,19 @@ header {
 }
 
 .card-listado li a {
+   
     text-decoration: none;
+   
     color: #000000;
     font-weight: bold;
     font-size: 0.8rem;
     font-family: "Parkinsans", sans-serif;
 }
-.card-listado li h3 {
+.card-listado li a h3 {
     color: #000000;
     font-family: "Parkinsans", sans-serif;
     text-align: center;
-    margin: 0 auto;
+    margin: 5px auto;
     font-size: 1rem;
     text-shadow: #686868 0px 0px 5px;
 }
@@ -353,21 +381,16 @@ header {
     color: #000000;
 }
 
-.presentacion-pizza h1 {
+.pizzas h1 {
     display: inline-block;
-    margin: 20, auto 0;
-    border: 1px solid #000000;
-    border-radius: 999px;
     color: #000000;
     text-align: center;
-
+    margin-top: 20px;
     font-family: "Parkinsans", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px 40px;
-    background: #fff;
-    /* Opcional: para que el fondo sea blanco */
+    
 }
-
 
 /*fin de la presentacion pizza*/
 
@@ -551,6 +574,7 @@ header {
     font-weight: bold;
     padding: 5px 10px;
     background-color: #9e9e9e;
+    margin: 0 15%;
 }
 .volver-indice a:hover {
     color: #383737;
@@ -648,7 +672,7 @@ header {
 
 .seccion-contacto {
     display: grid;
-    width: 80%;
+    width: 60%;
    
     grid-template-rows: 1fr auto;
     margin: 0 auto;
@@ -863,7 +887,7 @@ footer .logo-footer {
     .card-recetas,
     .card-listado {
         width: 98%;
-        margin: 0 auto;
+        margin: 10px auto;
         padding: 10px 0;
         box-sizing: border-box;
     }
@@ -871,6 +895,34 @@ footer .logo-footer {
         width: 50%;
         margin: 0 auto;
     }
+    .buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.carrito-img {
+    width: 32px;
+    height: 32px;
+}
+
+.carrito-contador {
+    background: #e67e22;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 1rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
 
     footer{
         display: grid;
@@ -942,7 +994,18 @@ footer .logo-footer {
         width: 90%;
         height: auto;
     }
+    .pizzas h1 {
+        width: 70%;
+        margin: 10px auto;
+        display: inline-block;
+    }
 
+    .carnes h1{
+        width: 70%;
+    margin: 10px auto;
+    display: inline-block;
+}
+  
     .logo-footer,
     .redes-footer {
         display: block;
@@ -963,12 +1026,31 @@ footer .logo-footer {
         border-radius: 5px;
     }
     .contacto{
+        grid-area: formulario;
+        width: 90%;
+       
+        background-color: #e2e0e0fb;
         padding: 14px;
+    }
+    .form-contacto {
+        width: 90%;
+        margin: 0 auto;
+      
     }
     .imagen-contacto {
         display: none;
     }
+    .presentacion-contacto {
+        width: 90%;
+        text-align: center;
+        font-family: "Parkinsans", sans-serif;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
     .seccion-contacto {
+
+        width: 75%;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
         grid-template-areas:
@@ -979,7 +1061,8 @@ footer .logo-footer {
 /* ===================== TABLETS ===================== */
 @media (min-width: 426px) and (max-width: 768px) {
     body {
-        width: 100vw;
+        margin: 0;
+        padding: 0;
         font-size: 1rem;
     }
 
@@ -1023,7 +1106,9 @@ footer .logo-footer {
         width: 100%;
         height: auto;
     }
-
+.carnes h1{
+    margin: 10px auto;
+}
     .logo-footer,
     .redes-footer {
         display: block;
