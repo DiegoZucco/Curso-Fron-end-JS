@@ -2,7 +2,7 @@ async function cargarProductos() {
     try {
         const contenedorProductos = document.getElementById("contenedor-productos");
         
-        const response = await fetch("JS/productos.json");
+        const response = await fetch("/JS/productos.json");
         if (!response.ok) {
             throw new Error("Error al cargar los productos: " + response.statusText);
         }
