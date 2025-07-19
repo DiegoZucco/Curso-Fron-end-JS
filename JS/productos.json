@@ -1,22 +1,24 @@
 
 [
-
   {
-    "ID": "AB1234",
+    
     "nombre_articulo": "Mis mejores pizzas",
     "precio": "$12000",
-    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+    "foto": "./imagenes/pizza-libro-cocina.avif",
+    "descripcion": "Un libro con las mejores recetas de pizzas del mundo."
   },
   {
-    "ID": "CD5678",
+   
     "nombre_articulo": "Carnes deliciosas",
     "precio": "$15000",
-    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+    "foto": "./imagenes/libro-carne.jpg",
+    "descripcion": "Un libro lleno de recetas de carnes asadas y guisos."
   },
   {
-    "ID": "EF9012",
+    
     "nombre_articulo": "Dulces tentaciones",
     "precio": "$14000",
-    "foto": "../imagenes/mi-gran-libro-de-recetas.jpg"
+    "foto": "./imagenes/libro-postres.jpg",
+    "descripcion": "Un libro con recetas de postres irresistibles."
   }
 ]

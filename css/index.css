@@ -4,16 +4,18 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 0;
     padding: 0;
- 
-    background: linear-gradient(130deg, #958f80d3 48%, #ffffff  52%);
+
+    background: linear-gradient(130deg, #958f80d3 48%, #ffffff 52%);
 }
 
 
@@ -126,7 +128,7 @@ header {
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     list-style: none;
     flex-direction: row;
     padding: 5px;
@@ -159,7 +161,7 @@ header {
     font-family: "Parkinsans", sans-serif;
     text-shadow: #adaaaa 0px 0px 3px;
     text-align: center;
-   
+
 }
 
 .sec_bienvenida {
@@ -170,13 +172,15 @@ header {
     text-align: center;
     align-items: center;
 }
+
 .sec_bienvenida h1 {
     font-family: "Parkinsans", sans-serif;
     color: #000000;
     font-size: 1.5rem;
     margin: 0 auto;
     padding: 10px 0;
-    text-shadow: #ffffff 0px 0px 3px;}
+    text-shadow: #ffffff 0px 0px 3px;
+}
 
 .sec_bienvenida p {
     font-family: "Parkinsans", sans-serif;
@@ -187,7 +191,8 @@ header {
     font-weight: 600;
     line-height: 1.5;
 }
-.sec_indice{
+
+.sec_indice {
     width: 90%;
     margin: 20px auto;
     padding: 20px 0;
@@ -203,8 +208,8 @@ header {
     display: inline-block;
     color: #161616;
     font-family: "Parkinsans", sans-serif;
-    margin:0 0 0 10px;
-   
+    margin: 0 0 0 10px;
+
     padding: 20px 0;
     font-size: 1.5rem;
     text-shadow: #141414 0px 0px 3px;
@@ -214,7 +219,8 @@ header {
     display: grid;
     width: 50%;
     height: 60%;
-    margin: 0 0 20px auto;  ;
+    margin: 0 0 20px auto;
+    ;
     grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
     gap: 10px;
     list-style: none;
@@ -280,10 +286,12 @@ header {
     text-align: left;
     font-weight: 800;
 }
+
 #card-pizzas {
     background-image: url(../imagenes/foto\ pizza\ 2.png);
     background-size: cover;
 }
+
 #card-carnes {
     background-image: url(../imagenes/fondo-carnes.jpg);
     background-size: cover;
@@ -293,11 +301,12 @@ header {
     background-image: url(../imagenes/fondo-postres.jpg);
     background-size: cover;
 }
+
 .card-recetas h2 {
     display: inline-block;
     color: #242424;
     font-family: "Parkinsans", sans-serif;
-    margin:0 0 0 10px;
+    margin: 0 0 0 10px;
     font-size: 1.5rem;
     text-shadow: #c4c0c0 0px 0px 3px;
 }
@@ -306,7 +315,8 @@ header {
     display: grid;
     width: 100%;
     height: 100%;
-    margin: 20px auto;  ;
+    margin: 20px auto;
+    ;
     grid-template-columns: repeat(auto-fit, minmax(150px, 20%));
     align-items: center;
     justify-content: center;
@@ -325,7 +335,7 @@ header {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- 
+
     font-family: "Parkinsans", sans-serif;
     transition: transform 2s ease, background-color 2s ease;
 }
@@ -340,14 +350,15 @@ header {
 }
 
 .card-listado li a {
-   
+
     text-decoration: none;
-   
+
     color: #000000;
     font-weight: bold;
     font-size: 0.8rem;
     font-family: "Parkinsans", sans-serif;
 }
+
 .card-listado li a h3 {
     color: #000000;
     font-family: "Parkinsans", sans-serif;
@@ -374,6 +385,69 @@ header {
     margin-bottom: 5px;
 }
 
+#h2-titulo {
+    text-align: center;
+    color: #000000;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    padding: 10px 0;
+    text-shadow: #686868 0px 0px 5px;
+
+}
+
+/*div cargado a traves de JS*/
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #c7c7c7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto h3 {
+    font-family: "Parkinsans", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-family: "Parkinsans", sans-serif;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.producto img {
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.boton-agregar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /*inicio de la seccion receta pizza*/
 
 
@@ -393,7 +467,7 @@ header {
     font-family: "Parkinsans", sans-serif;
     font-size: 1.5rem;
     padding: 10px 40px;
-    
+
 }
 
 /*fin de la presentacion pizza*/
@@ -474,7 +548,7 @@ header {
     margin: 0 auto;
 }
 
-.carnes{
+.carnes {
     width: 90%;
     margin: 20px auto;
     background-image: url(../imagenes/fondo-bondiola.webp);
@@ -482,6 +556,7 @@ header {
     border-radius: 10px;
     padding-bottom: 10px;
 }
+
 .presentacion-carnes p,
 .presentacion-carnes h3 {
     text-align: center;
@@ -502,14 +577,14 @@ header {
     font-family: "Parkinsans", sans-serif;
     font-size: 1.5rem;
     padding: 10px 40px;
-    
+
 }
 
 /*fin de la seccion presentacion carnes*/
 /*inicio de la seccion ingredientes*/
 .articulo-carnes-ingredientes {
     display: grid;
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -532,7 +607,7 @@ header {
     border-radius: 15px;
     overflow: hidden;
     border: #686868 1px solid;
-   
+
 }
 
 
@@ -570,7 +645,8 @@ header {
     list-style-position: inside;
 
 }
-.volver-indice a{
+
+.volver-indice a {
     text-decoration: none;
     color: #000000;
     font-family: "Parkinsans", sans-serif;
@@ -580,9 +656,10 @@ header {
     background-color: #9e9e9e;
     margin: 0 15%;
 }
+
 .volver-indice a:hover {
     color: #383737;
-    background-color: #dacaca;    
+    background-color: #dacaca;
     border-radius: 5px;
 }
 
@@ -670,14 +747,14 @@ header {
 }
 
 .articulo-pasos h3 {
-   
+
     text-align: center;
 }
 
 .seccion-contacto {
     display: grid;
     width: 60%;
-   
+
     grid-template-rows: 1fr auto;
     margin: 0 auto;
     gap: 20px;
@@ -686,7 +763,7 @@ header {
 }
 
 .presentacion-contacto {
-    
+
     text-align: center;
 }
 
@@ -696,7 +773,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     width: 70%;
-   
+
 
 }
 
@@ -895,59 +972,67 @@ footer .logo-footer {
         padding: 10px 0;
         box-sizing: border-box;
     }
-   .logo {
+
+    .logo {
         width: 50%;
         margin: 0 auto;
+        text-align: center;
     }
+
     .buscador {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.carrito-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    position: relative;
-}
+    .carrito-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        margin: 0 auto;
 
-.carrito-img {
-    width: 32px;
-    height: 32px;
-}
+    }
 
-.carrito-contador {
-    background: #e67e22;
-    color: #fff;
-    border-radius: 50%;
-    padding: 2px 8px;
-    font-size: 1rem;
-    position: absolute;
-    top: -8px;
-    right: -8px;
-}
+    .carrito-img {
+        width: 32px;
+        height: 32px;
+    }
 
-    footer{
+    .carrito-contador {
+        background: #e67e22;
+        color: #fff;
+        border-radius: 50%;
+        padding: 2px 8px;
+        font-size: 1rem;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+
+    footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;  
+        grid-template-rows: auto auto;
         width: 98%;
         margin: 0 auto;
         padding: 10px 0;
         box-sizing: border-box;
     }
-    .pizzas{
+
+    .pizzas {
         width: 98%;
         margin: 20px auto;
     }
 
 
-    .presentacion-pizza h1{
+    .presentacion-pizza h1 {
         font-size: 1.5rem;
         padding: 10px 20px;
     }
-    
+
 
     .buscador {
         flex-direction: column;
@@ -955,7 +1040,8 @@ footer .logo-footer {
         align-items: stretch;
         gap: 10px;
     }
-#buscador input[type="text"] {
+
+    #buscador input[type="text"] {
         width: 90%;
         margin: 0 auto;
     }
@@ -964,6 +1050,7 @@ footer .logo-footer {
         width: 90%;
         margin: 0 auto;
     }
+
     .menu {
         flex-direction: column;
         align-items: flex-start;
@@ -971,7 +1058,8 @@ footer .logo-footer {
     }
 
     .articulo-pasos {
-        max-height: calc(1.5em * 10); /* 6 líneas de texto, asumiendo line-height: 1.5em */
+        max-height: calc(1.5em * 10);
+        /* 6 líneas de texto, asumiendo line-height: 1.5em */
         overflow-y: auto;
         line-height: 1.5em;
         padding: 10px;
@@ -987,35 +1075,40 @@ footer .logo-footer {
     .indice,
     .card-listado {
         grid-template-columns: 1fr;
-        width: 65%;
+        width: 50%;
         margin: 0 auto;
         gap: 10px;
+        height: auto;
     }
-.card-listado li{
-    height: auto;
-}
+
+    .card-listado li {
+        height: auto;
+    }
+
     .fotos-indice {
         width: 90%;
         height: auto;
     }
+
     .pizzas h1 {
         width: 70%;
         margin: 10px auto;
         display: inline-block;
     }
 
-    .carnes h1{
+    .carnes h1 {
         width: 70%;
-    margin: 10px auto;
-    display: inline-block;
-}
-  
+        margin: 10px auto;
+        display: inline-block;
+    }
+
     .logo-footer,
     .redes-footer {
         display: block;
         text-align: center;
         margin: 10px auto;
     }
+
     .volver-indice a {
         display: block;
         width: 80%;
@@ -1029,21 +1122,25 @@ footer .logo-footer {
         font-weight: bold;
         border-radius: 5px;
     }
-    .contacto{
+
+    .contacto {
         grid-area: formulario;
         width: 90%;
-       
+
         background-color: #e2e0e0fb;
         padding: 14px;
     }
+
     .form-contacto {
         width: 90%;
         margin: 0 auto;
-      
+
     }
+
     .imagen-contacto {
         display: none;
     }
+
     .presentacion-contacto {
         width: 90%;
         text-align: center;
@@ -1052,6 +1149,7 @@ footer .logo-footer {
         margin: 0 auto;
         padding: 10px 0;
     }
+
     .seccion-contacto {
 
         width: 75%;
@@ -1061,6 +1159,38 @@ footer .logo-footer {
             "presentacion"
             "formulario";
     }
+
+    #contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .producto p {
+        font-family: "Parkinsans", sans-serif;
+        color: #666;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    #pop-up {
+        display: none;
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        width: 70%;
+        height: auto;
+        transform: translate(-50%, -50%);
+        background: #b3b2b2a4;
+        border: 2px solid #333;
+        padding: 20px;
+        z-index: 9999;
+    }
+}
 
 /* ===================== TABLETS ===================== */
 @media (min-width: 426px) and (max-width: 768px) {
@@ -1072,29 +1202,58 @@ footer .logo-footer {
 
     .header,
     .buscador,
-    .nav,
-    .logo,
-    .sec_bienvenida,
     .sec_indice,
     .card-recetas,
-    .card-listado,
-    footer {
-        width: 98%;
-        margin: 0 auto;
-        padding: 15px 0;
+    .card-listado {
+        width: 85%;
+        margin: 10px auto;
+        padding: 10px 0;
         box-sizing: border-box;
     }
 
+    .nav {
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "logo menu1"
+            "presentacion presentacion";
+        height: auto;
+        font-family: "Parkinsans", sans-serif;
+        align-items: center;
+        background-image: url(../imagenes/fondo-indice.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    .logo {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+        padding: 0;
+    }
+
+
     .buscador {
+
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
 
-    .menu {
-        flex-direction: row;
-        gap: 15px;
-    }
+
 
     .indice,
     .card-listado {
@@ -1103,21 +1262,40 @@ footer .logo-footer {
         margin: 0 auto;
         gap: 15px;
     }
-.card-listado li{
-    height: 100%;
-}
+
+    .card-listado li {
+        height: 100%;
+    }
+
     .fotos-indice {
         width: 100%;
         height: auto;
     }
-.carnes h1{
-    margin: 10px auto;
-}
+
+    .carnes h1 {
+        margin: 10px auto;
+    }
+
     .logo-footer,
     .redes-footer {
         display: block;
         text-align: center;
         margin: 10px auto;
     }
-}
+
+    .seccion-contacto {
+        width: 80%;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 20px 0;
+        font-family: "Parkinsans", sans-serif;
+    }
+
+    .form-contacto {
+        width: 90%;
+        margin: 0 auto;
+
+    }
 }
