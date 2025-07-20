@@ -267,13 +267,14 @@ header {
     text-shadow: #686868 0px 0px 5px;
 }
 
-.indice li a img {
+.fotos-indice{
     width: 100%;
-    height: 45%;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
+*/
 /*fin de la seccion indice general*/
 /*comienzo de seccion receta pizza*/
 .card-recetas {
@@ -450,6 +451,11 @@ header {
 
 /*inicio de la seccion receta pizza*/
 
+.pizzas{
+    background-image: url(../imagenes/foto\ pizza.png);
+    background-size: cover;
+
+}
 
 .presentacion-pizza {
     text-align: center;
@@ -460,13 +466,16 @@ header {
 }
 
 .pizzas h1 {
-    display: inline-block;
+     display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 999px;
     color: #000000;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto;
     font-family: "Parkinsans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px 40px;
+    background: #fff;
 
 }
 
@@ -549,6 +558,7 @@ header {
 }
 
 .carnes {
+    text-align: center;
     width: 90%;
     margin: 20px auto;
     background-image: url(../imagenes/fondo-bondiola.webp);
@@ -569,14 +579,17 @@ header {
 }
 
 
-.carnes h1 {
+.presentacion-carnes h1 {
     display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 999px;
     color: #000000;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto;
     font-family: "Parkinsans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 10px 40px;
+    background: #fff;
 
 }
 
@@ -663,6 +676,10 @@ header {
     border-radius: 5px;
 }
 
+.postres{
+    background-image: url(../imagenes/fondo-postres.jpg);
+    background-size: cover;
+}
 .presentacion-postres {
     text-align: center;
     margin: 0 auto;
@@ -676,8 +693,8 @@ header {
     border: 1px solid #000000;
     border-radius: 999px;
     color: #000000;
-    text-align: center;
-    margin-top: 20px;
+   
+    margin: 20px auto;
     font-family: "Parkinsans", sans-serif;
     font-size: 2rem;
     padding: 10px 40px;
@@ -961,8 +978,8 @@ footer .logo-footer {
     }
 
     .header,
-    .buscador,
-    .nav,
+    
+    
     .sec_bienvenida,
     .sec_indice,
     .card-recetas,
@@ -987,6 +1004,7 @@ footer .logo-footer {
     }
 
     .carrito-container {
+        width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -997,8 +1015,10 @@ footer .logo-footer {
     }
 
     .carrito-img {
-        width: 32px;
-        height: 32px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .carrito-contador {
@@ -1010,6 +1030,23 @@ footer .logo-footer {
         position: absolute;
         top: -8px;
         right: -8px;
+    }
+ .nav {
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "logo menu1"
+            "presentacion presentacion";
+        height: auto;
+        font-family: "Parkinsans", sans-serif;
+        align-items: center;
+        background-image: url(../imagenes/fondo-indice.jpg);
+        background-size: cover;
+        border-radius: 10px;
     }
 
     footer {
@@ -1025,6 +1062,7 @@ footer .logo-footer {
     .pizzas {
         width: 98%;
         margin: 20px auto;
+      
     }
 
 
@@ -1102,10 +1140,24 @@ footer .logo-footer {
         display: inline-block;
     }
 
-    .logo-footer,
-    .redes-footer {
-        display: block;
+
+
+    .footer-text {
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
+        font-family: "Parkinsans", sans-serif;
+        font-size: 0.8rem;
+    }
+    .redes-logo {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+
+    }
+    footer .logo-footer {
+        width: 60px;
+        height: 60px;
         margin: 10px auto;
     }
 
@@ -1201,7 +1253,7 @@ footer .logo-footer {
     }
 
     .header,
-    .buscador,
+   
     .sec_indice,
     .card-recetas,
     .card-listado {
@@ -1209,7 +1261,16 @@ footer .logo-footer {
         margin: 10px auto;
         padding: 10px 0;
         box-sizing: border-box;
+       
     }
+ .buscador{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+       gap: 10px;
+ }
 
     .nav {
         width: 95%;
@@ -1246,11 +1307,24 @@ footer .logo-footer {
     }
 
 
-    .buscador {
 
-        flex-direction: row;
+
+
+     .carrito-container {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
+        position: relative;
+        margin: 0 auto;
+
+    }
+    .carrito-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
 
@@ -1270,32 +1344,77 @@ footer .logo-footer {
     .fotos-indice {
         width: 100%;
         height: auto;
+        object-fit: cover;
+        display: block;
     }
 
     .carnes h1 {
         margin: 10px auto;
     }
 
-    .logo-footer,
-    .redes-footer {
-        display: block;
+      footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 98%;
+        margin: 0 auto;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+     .footer-text {
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
+        font-family: "Parkinsans", sans-serif;
+        font-size: 0.8rem;
+    }
+    .redes-logo {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+
+    }
+    footer .logo-footer {
+        width: 60px;
+        height: 60px;
         margin: 10px auto;
     }
+   .seccion-contacto {
 
-    .seccion-contacto {
-        width: 80%;
-        display: grid;
-        grid-template-rows: 1fr auto;
-        margin: 0 auto;
-        gap: 20px;
-        padding: 20px 0;
-        font-family: "Parkinsans", sans-serif;
+        width: 75%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "presentacion"
+            "formulario";
     }
+     .contacto {
+        grid-area: formulario;
+        width: 90%;
+
+        background-color: #e2e0e0fb;
+        padding: 14px;
+    }
+
 
     .form-contacto {
         width: 90%;
         margin: 0 auto;
 
+    }
+
+     .articulo-pasos {
+        max-height: calc(1.5em * 10);
+        /* 6 líneas de texto, asumiendo line-height: 1.5em */
+        overflow-y: auto;
+        line-height: 1.5em;
+        padding: 10px;
+        background-color: #fffbe6;
+        border: 1px solid #e0af65be;
+        border-radius: 10px;
+        box-sizing: border-box;
+        /* Opcional: para mostrar que se puede hacer scroll */
+        scrollbar-width: thin;
+        scrollbar-color: #e0af65be #f3f3f3d5;
     }
 }
