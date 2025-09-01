@@ -454,7 +454,11 @@ header {
 .pizzas{
     background-image: url(../imagenes/foto\ pizza.png);
     background-size: cover;
-
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 
 .presentacion-pizza {
@@ -679,6 +683,11 @@ header {
 .postres{
     background-image: url(../imagenes/fondo-postres.jpg);
     background-size: cover;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
 }
 .presentacion-postres {
     text-align: center;
