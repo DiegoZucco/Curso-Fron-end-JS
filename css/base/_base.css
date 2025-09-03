@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(130deg, #958f80d3 48%, #ffffff 52%);
+}
+
+h1 h2 h3 p a{
+    font-family: parkinsans, sans-serif;
+};

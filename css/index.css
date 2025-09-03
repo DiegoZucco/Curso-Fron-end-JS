@@ -1,22 +1,13 @@
-.parkinsans {
-    font-family: "Parkinsans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("base/_base.css");
+/*@import url("components/_buttons.css");
+@import url("components/_cards.css");
+@import url("components/_forms.css");
+@import url("components/_layout.css");
+@import url("sections/_header.css");
+@import url("sections/_recetas.css");
+@import url("sections/_contacto.css");
+@import url("sections/_footer.css");*/
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-
-    background: linear-gradient(130deg, #958f80d3 48%, #ffffff 52%);
-}
 
 
 header {
@@ -158,7 +149,6 @@ header {
     color: #000000;
     font-weight: bold;
     font-size: 1rem;
-    font-family: "Parkinsans", sans-serif;
     text-shadow: #adaaaa 0px 0px 3px;
     text-align: center;
 
